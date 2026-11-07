@@ -4,7 +4,6 @@ def first_unique_char(s):
     for char in s:
         frequency[char] = frequency.get(char, 0) + 1
 
-    # Second pass: Find the first unique character
     for i, char in enumerate(s):
         if frequency[char] == 1:
             return i
